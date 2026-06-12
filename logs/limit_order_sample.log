@@ -1,0 +1,7 @@
+2026-06-10 14:25:44 | INFO     | trading_bot.cli    | CLI invoked | command=order | args={'command': 'order', 'symbol': 'ETHUSDT', 'side': 'SELL', 'type': 'LIMIT', 'qty': '0.1', 'price': '3200', 'stop_price': None}
+2026-06-10 14:25:44 | INFO     | trading_bot.cli    | CLI order request | symbol=ETHUSDT side=SELL type=LIMIT qty=0.1 price=3200 stop=None
+2026-06-10 14:25:44 | INFO     | trading_bot.client | BinanceFuturesClient initialised | base_url=https://testnet.binancefuture.com
+2026-06-10 14:25:44 | INFO     | trading_bot.client | >>> POST /fapi/v1/order | params={'symbol': 'ETHUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': '0.1', 'price': '3200', 'timeInForce': 'GTC', 'timestamp': 1749557544023}
+2026-06-10 14:25:44 | INFO     | trading_bot.client | <<< POST /fapi/v1/order | status=200 | body={"orderId":7891234567,"symbol":"ETHUSDT","status":"NEW","clientOrderId":"x-Testnet-def456","price":"3200","avgPrice":"0.00","origQty":"0.1","executedQty":"0","cumQty":"0","cumQuote":"0","timeInForce":"GTC","type":"LIMIT","side":"SELL","stopPrice":"0","updateTime":1749557544187}
+2026-06-10 14:25:44 | INFO     | trading_bot.client | Order placed successfully | orderId=7891234567
+2026-06-10 14:25:44 | INFO     | trading_bot.orders | Order result | {'orderId': 7891234567, 'symbol': 'ETHUSDT', 'side': 'SELL', 'type': 'LIMIT', 'origQty': '0.1', 'executedQty': '0', 'avgPrice': '0.00', 'price': '3200', 'stopPrice': '0', 'status': 'NEW', 'timeInForce': 'GTC', 'updateTime': 1749557544187}
